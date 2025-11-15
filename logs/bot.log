@@ -1,0 +1,364 @@
+INFO     2025-11-13 15:24:50,273 [bot_logger] (logging_config.py).create_logger(73) Логирование для 'bot_logger' настроено успешно.
+INFO     2025-11-13 15:24:50,273 [bot_logger] (start_handler.py).<module>(10) Mary
+INFO     2025-11-13 15:24:50,598 [bot_logger] (start_handler.py).seed_admin(23) Проверка: seed_admin вызвана
+ERROR    2025-11-13 15:24:50,601 [bot_logger] (start_handler.py).seed_admin(42) Ошибка при создании админа invalid literal for int() with base 10: '484385628,'
+Traceback (most recent call last):
+  File [35m"E:\python\bots\fish_bot\handlers\start_handler.py"[0m, line [35m29[0m, in [35mseed_admin[0m
+    await User.create(
+    ...<3 lines>...
+    )
+  File [35m"E:\python\bots\fish_bot\venv\Lib\site-packages\tortoise\models.py"[0m, line [35m1207[0m, in [35mcreate[0m
+    instance = cls(**kwargs)
+  File [35m"E:\python\bots\fish_bot\venv\Lib\site-packages\tortoise\models.py"[0m, line [35m698[0m, in [35m__init__[0m
+    for key in meta.fields.difference([31mself._set_kwargs[0m[1;31m(kwargs)[0m):
+                                      [31m~~~~~~~~~~~~~~~~[0m[1;31m^^^^^^^^[0m
+  File [35m"E:\python\bots\fish_bot\venv\Lib\site-packages\tortoise\models.py"[0m, line [35m736[0m, in [35m_set_kwargs[0m
+    setattr(self, key, [31mfield_object.to_python_value[0m[1;31m(value)[0m)
+                       [31m~~~~~~~~~~~~~~~~~~~~~~~~~~~~[0m[1;31m^^^^^^^[0m
+  File [35m"E:\python\bots\fish_bot\venv\Lib\site-packages\tortoise\fields\base.py"[0m, line [35m260[0m, in [35mto_python_value[0m
+    value = self.field_type(value)  # pylint: disable=E1102
+[1;35mValueError[0m: [35minvalid literal for int() with base 10: '484385628,'[0m
+INFO     2025-11-13 15:24:50,808 [bot_logger] (set_menu.py).set_main_menu(25) Установил команды
+WARNING  2025-11-13 15:27:09,883 [bot_logger] (main.py).start_bot(20) Бот закрыт
+INFO     2025-11-13 15:27:12,845 [bot_logger] (logging_config.py).create_logger(73) Логирование для 'bot_logger' настроено успешно.
+INFO     2025-11-13 15:27:12,845 [bot_logger] (start_handler.py).<module>(10) Mary
+INFO     2025-11-13 15:27:13,097 [bot_logger] (start_handler.py).seed_admin(23) Проверка: seed_admin вызвана
+ERROR    2025-11-13 15:27:13,213 [bot_logger] (start_handler.py).seed_admin(42) Ошибка при создании админа 'str' object has no attribute '_saved_in_db'
+Traceback (most recent call last):
+  File [35m"E:\python\bots\fish_bot\handlers\start_handler.py"[0m, line [35m35[0m, in [35mseed_admin[0m
+    await UserRole.create(role=admin_role, user=settings.SUPERUSER)
+  File [35m"E:\python\bots\fish_bot\venv\Lib\site-packages\tortoise\models.py"[0m, line [35m1207[0m, in [35mcreate[0m
+    instance = cls(**kwargs)
+  File [35m"E:\python\bots\fish_bot\venv\Lib\site-packages\tortoise\models.py"[0m, line [35m698[0m, in [35m__init__[0m
+    for key in meta.fields.difference([31mself._set_kwargs[0m[1;31m(kwargs)[0m):
+                                      [31m~~~~~~~~~~~~~~~~[0m[1;31m^^^^^^^^[0m
+  File [35m"E:\python\bots\fish_bot\venv\Lib\site-packages\tortoise\models.py"[0m, line [35m724[0m, in [35m_set_kwargs[0m
+    if value and not [1;31mvalue._saved_in_db[0m:
+                     [1;31m^^^^^^^^^^^^^^^^^^[0m
+[1;35mAttributeError[0m: [35m'str' object has no attribute '_saved_in_db'[0m
+INFO     2025-11-13 15:27:13,367 [bot_logger] (set_menu.py).set_main_menu(25) Установил команды
+WARNING  2025-11-13 15:28:38,123 [bot_logger] (main.py).start_bot(20) Бот закрыт
+INFO     2025-11-13 15:28:40,694 [bot_logger] (logging_config.py).create_logger(71) Логирование для 'bot_logger' настроено успешно.
+INFO     2025-11-13 15:28:40,694 [bot_logger] (start_handler.py).<module>(10) Mary
+INFO     2025-11-13 15:28:40,940 [bot_logger] (start_handler.py).seed_admin(23) Проверка: seed_admin вызвана
+INFO     2025-11-13 15:28:40,952 [bot_logger] (start_handler.py).seed_admin(39) Админ уже существует, пропускаем создание
+INFO     2025-11-13 15:28:41,105 [bot_logger] (set_menu.py).set_main_menu(25) Установил команды
+WARNING  2025-11-13 15:30:04,543 [bot_logger] (main.py).start_bot(20) Бот закрыт
+INFO     2025-11-13 15:30:07,005 [bot_logger] (logging_config.py).create_logger(71) Логирование для 'bot_logger' настроено успешно.
+INFO     2025-11-13 15:30:07,005 [bot_logger] (start_handler.py).<module>(10) Mary
+INFO     2025-11-13 15:30:07,151 [bot_logger] (start_handler.py).seed_admin(23) Проверка: seed_admin вызвана
+INFO     2025-11-13 15:30:07,156 [bot_logger] (start_handler.py).seed_admin(39) Админ уже существует, пропускаем создание
+INFO     2025-11-13 15:30:07,345 [bot_logger] (set_menu.py).set_main_menu(25) Установил команды
+INFO     2025-11-13 15:31:46,642 [bot_logger] (logging_config.py).create_logger(71) Логирование для 'bot_logger' настроено успешно.
+INFO     2025-11-13 15:31:46,645 [bot_logger] (start_handler.py).<module>(10) Mary
+INFO     2025-11-13 15:31:46,881 [bot_logger] (start_handler.py).seed_admin(23) Проверка: seed_admin вызвана
+INFO     2025-11-13 15:31:46,885 [bot_logger] (start_handler.py).seed_admin(39) Админ уже существует, пропускаем создание
+INFO     2025-11-13 15:31:47,057 [bot_logger] (set_menu.py).set_main_menu(25) Установил команды
+WARNING  2025-11-13 15:32:01,205 [bot_logger] (main.py).start_bot(20) Бот закрыт
+INFO     2025-11-13 15:32:05,111 [bot_logger] (logging_config.py).create_logger(71) Логирование для 'bot_logger' настроено успешно.
+INFO     2025-11-13 15:32:05,112 [bot_logger] (start_handler.py).<module>(10) Mary
+INFO     2025-11-13 15:32:05,247 [bot_logger] (start_handler.py).seed_admin(23) Проверка: seed_admin вызвана
+INFO     2025-11-13 15:32:05,252 [bot_logger] (start_handler.py).seed_admin(39) Админ уже существует, пропускаем создание
+INFO     2025-11-13 15:32:05,482 [bot_logger] (set_menu.py).set_main_menu(25) Установил команды
+ERROR    2025-11-13 15:32:11,041 [bot_logger] (start_handler.py).get_start(63) Ошибка при создании админа Telegram server says - Bad Request: chat not found
+Traceback (most recent call last):
+  File [35m"E:\python\bots\fish_bot\handlers\start_handler.py"[0m, line [35m56[0m, in [35mget_start[0m
+    await bot.send_message(chat_id=settings.SUPERUSER,
+                           text=f'Зарегистрирован новый пользователь {message.from_user.id}')
+  File [35m"E:\python\bots\fish_bot\venv\Lib\site-packages\aiogram\client\bot.py"[0m, line [35m2850[0m, in [35msend_message[0m
+    return [1;31mawait self(call, request_timeout=request_timeout)[0m
+           [1;31m^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^[0m
+  File [35m"E:\python\bots\fish_bot\venv\Lib\site-packages\aiogram\client\bot.py"[0m, line [35m478[0m, in [35m__call__[0m
+    return [1;31mawait self.session(self, method, timeout=request_timeout)[0m
+           [1;31m^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^[0m
+  File [35m"E:\python\bots\fish_bot\venv\Lib\site-packages\aiogram\client\session\base.py"[0m, line [35m254[0m, in [35m__call__[0m
+    return cast(TelegramType, [1;31mawait middleware(bot, method)[0m)
+                              [1;31m^^^^^^^^^^^^^^^^^^^^^^^^^^^^^[0m
+  File [35m"E:\python\bots\fish_bot\venv\Lib\site-packages\aiogram\client\session\aiohttp.py"[0m, line [35m185[0m, in [35mmake_request[0m
+    response = self.check_response(
+        bot=bot, method=method, status_code=resp.status, content=raw_result
+    )
+  File [35m"E:\python\bots\fish_bot\venv\Lib\site-packages\aiogram\client\session\base.py"[0m, line [35m120[0m, in [35mcheck_response[0m
+    raise TelegramBadRequest(method=method, message=description)
+[1;35maiogram.exceptions.TelegramBadRequest[0m: [35mTelegram server says - Bad Request: chat not found[0m
+WARNING  2025-11-13 15:32:53,960 [bot_logger] (main.py).start_bot(20) Бот закрыт
+INFO     2025-11-13 15:32:56,575 [bot_logger] (logging_config.py).create_logger(71) Логирование для 'bot_logger' настроено успешно.
+INFO     2025-11-13 15:32:56,576 [bot_logger] (start_handler.py).<module>(10) Mary
+INFO     2025-11-13 15:32:56,710 [bot_logger] (start_handler.py).seed_admin(23) Проверка: seed_admin вызвана
+INFO     2025-11-13 15:32:56,715 [bot_logger] (start_handler.py).seed_admin(39) Админ уже существует, пропускаем создание
+INFO     2025-11-13 15:32:56,900 [bot_logger] (set_menu.py).set_main_menu(25) Установил команды
+WARNING  2025-11-13 15:33:31,482 [bot_logger] (main.py).start_bot(20) Бот закрыт
+INFO     2025-11-13 15:33:34,000 [bot_logger] (logging_config.py).create_logger(71) Логирование для 'bot_logger' настроено успешно.
+INFO     2025-11-13 15:33:34,001 [bot_logger] (start_handler.py).<module>(10) Mary
+INFO     2025-11-13 15:33:34,134 [bot_logger] (start_handler.py).seed_admin(23) Проверка: seed_admin вызвана
+ERROR    2025-11-13 15:33:34,140 [bot_logger] (start_handler.py).seed_admin(42) Ошибка при создании админа 'str' object has no attribute '_saved_in_db'
+Traceback (most recent call last):
+  File [35m"E:\python\bots\fish_bot\handlers\start_handler.py"[0m, line [35m35[0m, in [35mseed_admin[0m
+    await UserRole.create(role=admin_role, user=settings.SUPERUSER)
+  File [35m"E:\python\bots\fish_bot\venv\Lib\site-packages\tortoise\models.py"[0m, line [35m1207[0m, in [35mcreate[0m
+    instance = cls(**kwargs)
+  File [35m"E:\python\bots\fish_bot\venv\Lib\site-packages\tortoise\models.py"[0m, line [35m698[0m, in [35m__init__[0m
+    for key in meta.fields.difference([31mself._set_kwargs[0m[1;31m(kwargs)[0m):
+                                      [31m~~~~~~~~~~~~~~~~[0m[1;31m^^^^^^^^[0m
+  File [35m"E:\python\bots\fish_bot\venv\Lib\site-packages\tortoise\models.py"[0m, line [35m724[0m, in [35m_set_kwargs[0m
+    if value and not [1;31mvalue._saved_in_db[0m:
+                     [1;31m^^^^^^^^^^^^^^^^^^[0m
+[1;35mAttributeError[0m: [35m'str' object has no attribute '_saved_in_db'[0m
+INFO     2025-11-13 15:33:34,299 [bot_logger] (set_menu.py).set_main_menu(25) Установил команды
+WARNING  2025-11-13 18:17:08,280 [bot_logger] (main.py).start_bot(20) Бот закрыт
+WARNING  2025-11-13 18:17:08,445 [bot_logger] (main.py).<module>(41) Помощник завершены
+INFO     2025-11-13 22:53:10,009 [bot_logger] (logging_config.py).create_logger(71) Логирование для 'bot_logger' настроено успешно.
+INFO     2025-11-13 22:53:10,010 [bot_logger] (start_handler.py).<module>(10) Mary
+INFO     2025-11-13 22:53:10,676 [bot_logger] (start_handler.py).seed_admin(23) Проверка: seed_admin вызвана
+ERROR    2025-11-13 22:53:10,685 [bot_logger] (start_handler.py).seed_admin(42) Ошибка при создании админа 'str' object has no attribute '_saved_in_db'
+Traceback (most recent call last):
+  File [35m"E:\python\bots\fish_bot\handlers\start_handler.py"[0m, line [35m35[0m, in [35mseed_admin[0m
+    await UserRole.create(role=admin_role, user=settings.SUPERUSER)
+  File [35m"E:\python\bots\fish_bot\venv\Lib\site-packages\tortoise\models.py"[0m, line [35m1207[0m, in [35mcreate[0m
+    instance = cls(**kwargs)
+  File [35m"E:\python\bots\fish_bot\venv\Lib\site-packages\tortoise\models.py"[0m, line [35m698[0m, in [35m__init__[0m
+    for key in meta.fields.difference([31mself._set_kwargs[0m[1;31m(kwargs)[0m):
+                                      [31m~~~~~~~~~~~~~~~~[0m[1;31m^^^^^^^^[0m
+  File [35m"E:\python\bots\fish_bot\venv\Lib\site-packages\tortoise\models.py"[0m, line [35m724[0m, in [35m_set_kwargs[0m
+    if value and not [1;31mvalue._saved_in_db[0m:
+                     [1;31m^^^^^^^^^^^^^^^^^^[0m
+[1;35mAttributeError[0m: [35m'str' object has no attribute '_saved_in_db'[0m
+INFO     2025-11-13 22:53:11,149 [bot_logger] (set_menu.py).set_main_menu(25) Установил команды
+WARNING  2025-11-13 22:58:30,331 [bot_logger] (main.py).start_bot(20) Бот закрыт
+INFO     2025-11-13 22:58:33,070 [bot_logger] (logging_config.py).create_logger(71) Логирование для 'bot_logger' настроено успешно.
+INFO     2025-11-13 22:58:33,071 [bot_logger] (start_handler.py).<module>(10) Mary
+INFO     2025-11-13 22:58:33,203 [bot_logger] (start_handler.py).seed_admin(23) Проверка: seed_admin вызвана
+INFO     2025-11-13 22:58:33,208 [bot_logger] (start_handler.py).seed_admin(35) admin_role: <Role>, user: Mary
+ERROR    2025-11-13 22:58:33,209 [bot_logger] (start_handler.py).seed_admin(43) Ошибка при создании админа 'str' object has no attribute '_saved_in_db'
+Traceback (most recent call last):
+  File [35m"E:\python\bots\fish_bot\handlers\start_handler.py"[0m, line [35m36[0m, in [35mseed_admin[0m
+    await UserRole.create(role=admin_role, user=settings.SUPERUSER)
+  File [35m"E:\python\bots\fish_bot\venv\Lib\site-packages\tortoise\models.py"[0m, line [35m1207[0m, in [35mcreate[0m
+    instance = cls(**kwargs)
+  File [35m"E:\python\bots\fish_bot\venv\Lib\site-packages\tortoise\models.py"[0m, line [35m698[0m, in [35m__init__[0m
+    for key in meta.fields.difference([31mself._set_kwargs[0m[1;31m(kwargs)[0m):
+                                      [31m~~~~~~~~~~~~~~~~[0m[1;31m^^^^^^^^[0m
+  File [35m"E:\python\bots\fish_bot\venv\Lib\site-packages\tortoise\models.py"[0m, line [35m724[0m, in [35m_set_kwargs[0m
+    if value and not [1;31mvalue._saved_in_db[0m:
+                     [1;31m^^^^^^^^^^^^^^^^^^[0m
+[1;35mAttributeError[0m: [35m'str' object has no attribute '_saved_in_db'[0m
+INFO     2025-11-13 22:58:33,429 [bot_logger] (set_menu.py).set_main_menu(25) Установил команды
+WARNING  2025-11-13 22:59:42,688 [bot_logger] (main.py).start_bot(20) Бот закрыт
+INFO     2025-11-13 22:59:45,273 [bot_logger] (logging_config.py).create_logger(71) Логирование для 'bot_logger' настроено успешно.
+INFO     2025-11-13 22:59:45,274 [bot_logger] (start_handler.py).<module>(10) Mary
+INFO     2025-11-13 22:59:45,406 [bot_logger] (start_handler.py).seed_admin(23) Проверка: seed_admin вызвана
+INFO     2025-11-13 22:59:45,412 [bot_logger] (start_handler.py).seed_admin(35) admin_role: <Role>, user: Mary
+INFO     2025-11-13 22:59:45,414 [bot_logger] (start_handler.py).seed_admin(37) Администратор зарегистрирован
+INFO     2025-11-13 22:59:45,672 [bot_logger] (set_menu.py).set_main_menu(25) Установил команды
+WARNING  2025-11-13 23:00:43,291 [bot_logger] (main.py).start_bot(20) Бот закрыт
+INFO     2025-11-13 23:00:46,102 [bot_logger] (logging_config.py).create_logger(71) Логирование для 'bot_logger' настроено успешно.
+INFO     2025-11-13 23:00:46,102 [bot_logger] (start_handler.py).<module>(10) Mary
+INFO     2025-11-13 23:00:46,356 [bot_logger] (start_handler.py).seed_admin(23) Проверка: seed_admin вызвана
+INFO     2025-11-13 23:00:46,527 [bot_logger] (set_menu.py).set_main_menu(25) Установил команды
+WARNING  2025-11-14 00:06:02,554 [bot_logger] (main.py).start_bot(20) Бот закрыт
+WARNING  2025-11-14 00:06:02,732 [bot_logger] (main.py).<module>(41) Помощник завершены
+INFO     2025-11-14 14:20:12,231 [bot_logger] (logging_config.py).create_logger(71) Логирование для 'bot_logger' настроено успешно.
+INFO     2025-11-14 14:20:13,364 [bot_logger] (set_menu.py).set_main_menu(25) Установил команды
+WARNING  2025-11-14 14:21:35,716 [bot_logger] (main.py).start_bot(20) Бот закрыт
+INFO     2025-11-14 14:21:38,578 [bot_logger] (logging_config.py).create_logger(71) Логирование для 'bot_logger' настроено успешно.
+INFO     2025-11-14 14:21:38,897 [bot_logger] (set_menu.py).set_main_menu(25) Установил команды
+WARNING  2025-11-14 14:22:32,675 [bot_logger] (main.py).start_bot(20) Бот закрыт
+INFO     2025-11-14 14:22:35,584 [bot_logger] (logging_config.py).create_logger(71) Логирование для 'bot_logger' настроено успешно.
+INFO     2025-11-14 14:22:36,065 [bot_logger] (set_menu.py).set_main_menu(25) Установил команды
+WARNING  2025-11-14 14:42:21,186 [bot_logger] (main.py).start_bot(20) Бот закрыт
+WARNING  2025-11-14 14:42:21,353 [bot_logger] (main.py).<module>(41) Помощник завершены
+INFO     2025-11-14 14:42:23,998 [bot_logger] (logging_config.py).create_logger(71) Логирование для 'bot_logger' настроено успешно.
+INFO     2025-11-14 14:42:41,754 [bot_logger] (logging_config.py).create_logger(71) Логирование для 'bot_logger' настроено успешно.
+INFO     2025-11-14 14:42:43,737 [bot_logger] (set_menu.py).set_main_menu(25) Установил команды
+WARNING  2025-11-14 20:29:03,528 [bot_logger] (main.py).start_bot(20) Бот закрыт
+WARNING  2025-11-14 20:29:03,691 [bot_logger] (main.py).<module>(41) Помощник завершены
+INFO     2025-11-14 20:29:50,180 [bot_logger] (logging_config.py).create_logger(71) Логирование для 'bot_logger' настроено успешно.
+INFO     2025-11-14 20:30:10,718 [bot_logger] (logging_config.py).create_logger(71) Логирование для 'bot_logger' настроено успешно.
+INFO     2025-11-14 20:30:13,176 [bot_logger] (set_menu.py).set_main_menu(25) Установил команды
+WARNING  2025-11-14 20:33:04,805 [bot_logger] (main.py).start_bot(22) Бот закрыт
+INFO     2025-11-14 20:33:06,209 [bot_logger] (logging_config.py).create_logger(71) Логирование для 'bot_logger' настроено успешно.
+INFO     2025-11-14 20:33:08,316 [bot_logger] (set_menu.py).set_main_menu(25) Установил команды
+WARNING  2025-11-14 20:34:14,552 [bot_logger] (main.py).start_bot(22) Бот закрыт
+INFO     2025-11-14 20:34:15,746 [bot_logger] (logging_config.py).create_logger(71) Логирование для 'bot_logger' настроено успешно.
+INFO     2025-11-14 20:34:17,934 [bot_logger] (set_menu.py).set_main_menu(25) Установил команды
+WARNING  2025-11-14 21:00:10,698 [bot_logger] (main.py).start_bot(22) Бот закрыт
+WARNING  2025-11-14 21:00:11,025 [bot_logger] (main.py).<module>(43) Помощник завершены
+INFO     2025-11-14 21:00:11,738 [bot_logger] (logging_config.py).create_logger(71) Логирование для 'bot_logger' настроено успешно.
+INFO     2025-11-14 21:00:14,087 [bot_logger] (set_menu.py).set_main_menu(25) Установил команды
+WARNING  2025-11-14 21:18:06,101 [bot_logger] (main.py).start_bot(22) Бот закрыт
+WARNING  2025-11-14 21:18:06,300 [bot_logger] (main.py).<module>(43) Помощник завершены
+INFO     2025-11-14 21:18:07,027 [bot_logger] (logging_config.py).create_logger(71) Логирование для 'bot_logger' настроено успешно.
+INFO     2025-11-14 21:18:09,475 [bot_logger] (set_menu.py).set_main_menu(25) Установил команды
+WARNING  2025-11-14 21:28:13,857 [bot_logger] (main.py).start_bot(22) Бот закрыт
+WARNING  2025-11-14 21:28:14,103 [bot_logger] (main.py).<module>(43) Помощник завершены
+INFO     2025-11-14 21:41:08,446 [bot_logger] (logging_config.py).create_logger(71) Логирование для 'bot_logger' настроено успешно.
+INFO     2025-11-14 21:41:09,078 [bot_logger] (set_menu.py).set_main_menu(25) Установил команды
+WARNING  2025-11-14 21:41:37,205 [bot_logger] (main.py).start_bot(25) Бот закрыт
+INFO     2025-11-14 21:41:40,041 [bot_logger] (logging_config.py).create_logger(71) Логирование для 'bot_logger' настроено успешно.
+INFO     2025-11-14 21:41:40,705 [bot_logger] (set_menu.py).set_main_menu(25) Установил команды
+WARNING  2025-11-14 21:41:56,709 [bot_logger] (main.py).start_bot(25) Бот закрыт
+WARNING  2025-11-14 21:41:56,878 [bot_logger] (main.py).<module>(46) Помощник завершены
+INFO     2025-11-14 21:41:59,285 [bot_logger] (logging_config.py).create_logger(71) Логирование для 'bot_logger' настроено успешно.
+INFO     2025-11-14 21:41:59,830 [bot_logger] (set_menu.py).set_main_menu(25) Установил команды
+WARNING  2025-11-14 21:47:24,916 [bot_logger] (main.py).start_bot(25) Бот закрыт
+INFO     2025-11-14 22:00:10,832 [bot_logger] (logging_config.py).create_logger(71) Логирование для 'bot_logger' настроено успешно.
+INFO     2025-11-14 22:01:02,146 [bot_logger] (logging_config.py).create_logger(71) Логирование для 'bot_logger' настроено успешно.
+INFO     2025-11-14 22:04:17,852 [bot_logger] (logging_config.py).create_logger(71) Логирование для 'bot_logger' настроено успешно.
+INFO     2025-11-14 22:04:18,556 [bot_logger] (set_menu.py).set_main_menu(25) Установил команды
+WARNING  2025-11-14 22:16:18,988 [bot_logger] (main.py).start_bot(25) Бот закрыт
+WARNING  2025-11-14 22:16:19,151 [bot_logger] (main.py).<module>(46) Помощник завершены
+INFO     2025-11-14 22:16:23,228 [bot_logger] (logging_config.py).create_logger(71) Логирование для 'bot_logger' настроено успешно.
+INFO     2025-11-14 22:16:24,184 [bot_logger] (set_menu.py).set_main_menu(25) Установил команды
+WARNING  2025-11-14 22:18:02,232 [bot_logger] (main.py).start_bot(25) Бот закрыт
+INFO     2025-11-14 22:18:05,005 [bot_logger] (logging_config.py).create_logger(71) Логирование для 'bot_logger' настроено успешно.
+INFO     2025-11-14 22:18:05,582 [bot_logger] (set_menu.py).set_main_menu(25) Установил команды
+WARNING  2025-11-14 22:22:04,959 [bot_logger] (main.py).start_bot(25) Бот закрыт
+INFO     2025-11-14 22:22:07,799 [bot_logger] (logging_config.py).create_logger(71) Логирование для 'bot_logger' настроено успешно.
+INFO     2025-11-14 22:22:08,820 [bot_logger] (set_menu.py).set_main_menu(25) Установил команды
+WARNING  2025-11-14 22:25:11,546 [bot_logger] (main.py).start_bot(25) Бот закрыт
+INFO     2025-11-14 22:25:14,008 [bot_logger] (logging_config.py).create_logger(71) Логирование для 'bot_logger' настроено успешно.
+INFO     2025-11-14 22:25:14,698 [bot_logger] (set_menu.py).set_main_menu(25) Установил команды
+WARNING  2025-11-14 22:27:22,352 [bot_logger] (main.py).start_bot(25) Бот закрыт
+WARNING  2025-11-14 22:27:22,673 [bot_logger] (main.py).<module>(46) Помощник завершены
+INFO     2025-11-14 22:27:25,156 [bot_logger] (logging_config.py).create_logger(71) Логирование для 'bot_logger' настроено успешно.
+INFO     2025-11-14 22:27:25,827 [bot_logger] (set_menu.py).set_main_menu(25) Установил команды
+INFO     2025-11-14 22:27:30,364 [bot_logger] (common.py).get_start(16) нажал на старт
+WARNING  2025-11-14 22:29:15,784 [bot_logger] (main.py).start_bot(25) Бот закрыт
+INFO     2025-11-14 22:29:18,492 [bot_logger] (logging_config.py).create_logger(71) Логирование для 'bot_logger' настроено успешно.
+INFO     2025-11-14 22:29:19,023 [bot_logger] (set_menu.py).set_main_menu(25) Установил команды
+WARNING  2025-11-14 22:36:24,049 [bot_logger] (main.py).start_bot(25) Бот закрыт
+INFO     2025-11-14 22:36:26,659 [bot_logger] (logging_config.py).create_logger(71) Логирование для 'bot_logger' настроено успешно.
+INFO     2025-11-14 22:36:27,432 [bot_logger] (set_menu.py).set_main_menu(25) Установил команды
+WARNING  2025-11-14 22:42:51,350 [bot_logger] (main.py).start_bot(25) Бот закрыт
+WARNING  2025-11-14 22:42:51,719 [bot_logger] (main.py).<module>(46) Помощник завершены
+INFO     2025-11-14 22:42:54,162 [bot_logger] (logging_config.py).create_logger(71) Логирование для 'bot_logger' настроено успешно.
+INFO     2025-11-14 22:42:54,845 [bot_logger] (set_menu.py).set_main_menu(25) Установил команды
+WARNING  2025-11-14 22:43:24,681 [bot_logger] (main.py).start_bot(25) Бот закрыт
+INFO     2025-11-14 22:43:27,189 [bot_logger] (logging_config.py).create_logger(71) Логирование для 'bot_logger' настроено успешно.
+INFO     2025-11-14 22:43:27,890 [bot_logger] (set_menu.py).set_main_menu(25) Установил команды
+WARNING  2025-11-14 22:48:49,654 [bot_logger] (main.py).start_bot(25) Бот закрыт
+INFO     2025-11-14 22:48:52,464 [bot_logger] (logging_config.py).create_logger(71) Логирование для 'bot_logger' настроено успешно.
+INFO     2025-11-14 22:48:53,114 [bot_logger] (set_menu.py).set_main_menu(25) Установил команды
+WARNING  2025-11-14 22:52:59,747 [bot_logger] (main.py).start_bot(25) Бот закрыт
+WARNING  2025-11-14 22:52:59,926 [bot_logger] (main.py).<module>(46) Помощник завершены
+INFO     2025-11-14 22:53:02,585 [bot_logger] (logging_config.py).create_logger(71) Логирование для 'bot_logger' настроено успешно.
+INFO     2025-11-14 22:53:03,481 [bot_logger] (set_menu.py).set_main_menu(25) Установил команды
+WARNING  2025-11-14 22:53:40,237 [bot_logger] (main.py).start_bot(25) Бот закрыт
+INFO     2025-11-14 22:53:42,957 [bot_logger] (logging_config.py).create_logger(71) Логирование для 'bot_logger' настроено успешно.
+INFO     2025-11-14 22:53:43,586 [bot_logger] (set_menu.py).set_main_menu(25) Установил команды
+WARNING  2025-11-14 22:53:59,138 [bot_logger] (main.py).start_bot(25) Бот закрыт
+INFO     2025-11-14 22:54:01,621 [bot_logger] (logging_config.py).create_logger(71) Логирование для 'bot_logger' настроено успешно.
+INFO     2025-11-14 22:54:02,324 [bot_logger] (set_menu.py).set_main_menu(25) Установил команды
+WARNING  2025-11-14 22:54:54,823 [bot_logger] (main.py).start_bot(25) Бот закрыт
+INFO     2025-11-14 22:54:57,358 [bot_logger] (logging_config.py).create_logger(71) Логирование для 'bot_logger' настроено успешно.
+INFO     2025-11-14 22:54:58,097 [bot_logger] (set_menu.py).set_main_menu(25) Установил команды
+WARNING  2025-11-14 22:56:14,960 [bot_logger] (main.py).start_bot(25) Бот закрыт
+INFO     2025-11-14 22:56:17,930 [bot_logger] (logging_config.py).create_logger(71) Логирование для 'bot_logger' настроено успешно.
+INFO     2025-11-14 22:56:18,651 [bot_logger] (set_menu.py).set_main_menu(25) Установил команды
+WARNING  2025-11-14 22:56:29,506 [bot_logger] (main.py).start_bot(25) Бот закрыт
+INFO     2025-11-14 22:56:32,085 [bot_logger] (logging_config.py).create_logger(71) Логирование для 'bot_logger' настроено успешно.
+INFO     2025-11-14 22:56:32,776 [bot_logger] (set_menu.py).set_main_menu(25) Установил команды
+WARNING  2025-11-14 22:59:26,737 [bot_logger] (main.py).start_bot(25) Бот закрыт
+INFO     2025-11-14 22:59:29,797 [bot_logger] (logging_config.py).create_logger(71) Логирование для 'bot_logger' настроено успешно.
+INFO     2025-11-14 22:59:30,526 [bot_logger] (set_menu.py).set_main_menu(25) Установил команды
+WARNING  2025-11-14 23:00:09,201 [bot_logger] (main.py).start_bot(25) Бот закрыт
+INFO     2025-11-14 23:00:11,813 [bot_logger] (logging_config.py).create_logger(71) Логирование для 'bot_logger' настроено успешно.
+INFO     2025-11-14 23:00:12,415 [bot_logger] (set_menu.py).set_main_menu(25) Установил команды
+WARNING  2025-11-14 23:01:27,536 [bot_logger] (main.py).start_bot(25) Бот закрыт
+INFO     2025-11-14 23:01:30,142 [bot_logger] (logging_config.py).create_logger(71) Логирование для 'bot_logger' настроено успешно.
+INFO     2025-11-14 23:01:30,934 [bot_logger] (set_menu.py).set_main_menu(25) Установил команды
+WARNING  2025-11-14 23:01:53,627 [bot_logger] (main.py).start_bot(25) Бот закрыт
+INFO     2025-11-14 23:01:56,302 [bot_logger] (logging_config.py).create_logger(71) Логирование для 'bot_logger' настроено успешно.
+INFO     2025-11-14 23:01:56,957 [bot_logger] (set_menu.py).set_main_menu(25) Установил команды
+WARNING  2025-11-14 23:02:32,641 [bot_logger] (main.py).start_bot(25) Бот закрыт
+INFO     2025-11-14 23:02:35,315 [bot_logger] (logging_config.py).create_logger(71) Логирование для 'bot_logger' настроено успешно.
+INFO     2025-11-14 23:02:36,065 [bot_logger] (set_menu.py).set_main_menu(25) Установил команды
+WARNING  2025-11-14 23:02:47,975 [bot_logger] (main.py).start_bot(25) Бот закрыт
+INFO     2025-11-14 23:02:50,437 [bot_logger] (logging_config.py).create_logger(71) Логирование для 'bot_logger' настроено успешно.
+INFO     2025-11-14 23:02:51,274 [bot_logger] (set_menu.py).set_main_menu(25) Установил команды
+WARNING  2025-11-14 23:04:52,072 [bot_logger] (main.py).start_bot(25) Бот закрыт
+WARNING  2025-11-14 23:04:52,253 [bot_logger] (main.py).<module>(46) Помощник завершены
+INFO     2025-11-14 23:04:54,642 [bot_logger] (logging_config.py).create_logger(71) Логирование для 'bot_logger' настроено успешно.
+INFO     2025-11-14 23:04:55,512 [bot_logger] (set_menu.py).set_main_menu(25) Установил команды
+WARNING  2025-11-14 23:05:02,187 [bot_logger] (main.py).start_bot(25) Бот закрыт
+INFO     2025-11-14 23:05:04,745 [bot_logger] (logging_config.py).create_logger(71) Логирование для 'bot_logger' настроено успешно.
+INFO     2025-11-14 23:05:05,330 [bot_logger] (set_menu.py).set_main_menu(25) Установил команды
+WARNING  2025-11-14 23:05:18,578 [bot_logger] (main.py).start_bot(25) Бот закрыт
+INFO     2025-11-14 23:05:21,008 [bot_logger] (logging_config.py).create_logger(71) Логирование для 'bot_logger' настроено успешно.
+INFO     2025-11-14 23:05:21,649 [bot_logger] (set_menu.py).set_main_menu(25) Установил команды
+WARNING  2025-11-14 23:05:33,420 [bot_logger] (main.py).start_bot(25) Бот закрыт
+INFO     2025-11-14 23:05:36,005 [bot_logger] (logging_config.py).create_logger(71) Логирование для 'bot_logger' настроено успешно.
+INFO     2025-11-14 23:05:36,572 [bot_logger] (set_menu.py).set_main_menu(25) Установил команды
+WARNING  2025-11-14 23:05:42,545 [bot_logger] (main.py).start_bot(25) Бот закрыт
+INFO     2025-11-14 23:05:45,162 [bot_logger] (logging_config.py).create_logger(71) Логирование для 'bot_logger' настроено успешно.
+INFO     2025-11-14 23:05:45,767 [bot_logger] (set_menu.py).set_main_menu(25) Установил команды
+WARNING  2025-11-14 23:05:56,701 [bot_logger] (main.py).start_bot(25) Бот закрыт
+INFO     2025-11-14 23:05:59,164 [bot_logger] (logging_config.py).create_logger(71) Логирование для 'bot_logger' настроено успешно.
+INFO     2025-11-14 23:05:59,726 [bot_logger] (set_menu.py).set_main_menu(25) Установил команды
+WARNING  2025-11-14 23:13:26,380 [bot_logger] (main.py).start_bot(25) Бот закрыт
+INFO     2025-11-15 10:56:15,906 [bot_logger] (logging_config.py).create_logger(71) Логирование для 'bot_logger' настроено успешно.
+INFO     2025-11-15 10:56:17,744 [bot_logger] (set_menu.py).set_main_menu(25) Установил команды
+WARNING  2025-11-15 11:40:31,510 [bot_logger] (main.py).start_bot(25) Бот закрыт
+WARNING  2025-11-15 11:40:31,672 [bot_logger] (main.py).<module>(46) Помощник завершены
+INFO     2025-11-15 11:40:34,154 [bot_logger] (logging_config.py).create_logger(71) Логирование для 'bot_logger' настроено успешно.
+INFO     2025-11-15 11:40:57,437 [bot_logger] (logging_config.py).create_logger(71) Логирование для 'bot_logger' настроено успешно.
+DEBUG    2025-11-15 11:40:58,329 [bot_logger] (set_menu.py).set_main_menu(22) Установил команды
+WARNING  2025-11-15 11:44:23,510 [bot_logger] (main.py).start_bot(25) Бот закрыт
+INFO     2025-11-15 11:44:26,683 [bot_logger] (logging_config.py).create_logger(71) Логирование для 'bot_logger' настроено успешно.
+DEBUG    2025-11-15 11:44:27,317 [bot_logger] (set_menu.py).set_main_menu(22) Установил команды
+WARNING  2025-11-15 11:44:53,504 [bot_logger] (main.py).start_bot(25) Бот закрыт
+INFO     2025-11-15 11:44:56,274 [bot_logger] (logging_config.py).create_logger(71) Логирование для 'bot_logger' настроено успешно.
+DEBUG    2025-11-15 11:44:56,848 [bot_logger] (set_menu.py).set_main_menu(22) Установил команды
+WARNING  2025-11-15 11:49:46,168 [bot_logger] (main.py).start_bot(25) Бот закрыт
+INFO     2025-11-15 11:49:48,866 [bot_logger] (logging_config.py).create_logger(71) Логирование для 'bot_logger' настроено успешно.
+INFO     2025-11-15 11:50:24,950 [bot_logger] (logging_config.py).create_logger(71) Логирование для 'bot_logger' настроено успешно.
+DEBUG    2025-11-15 11:50:25,502 [bot_logger] (set_menu.py).set_main_menu(22) Установил команды
+WARNING  2025-11-15 11:52:55,807 [bot_logger] (main.py).start_bot(25) Бот закрыт
+WARNING  2025-11-15 11:52:55,998 [bot_logger] (main.py).<module>(46) Помощник завершены
+INFO     2025-11-15 11:52:58,438 [bot_logger] (logging_config.py).create_logger(71) Логирование для 'bot_logger' настроено успешно.
+DEBUG    2025-11-15 11:52:58,994 [bot_logger] (set_menu.py).set_main_menu(22) Установил команды
+WARNING  2025-11-15 12:33:16,271 [bot_logger] (main.py).start_bot(25) Бот закрыт
+WARNING  2025-11-15 12:33:16,434 [bot_logger] (main.py).<module>(46) Помощник завершены
+INFO     2025-11-15 12:33:20,375 [bot_logger] (logging_config.py).create_logger(71) Логирование для 'bot_logger' настроено успешно.
+DEBUG    2025-11-15 12:33:21,189 [bot_logger] (set_menu.py).set_main_menu(22) Установил команды
+WARNING  2025-11-15 12:34:27,661 [bot_logger] (main.py).start_bot(25) Бот закрыт
+INFO     2025-11-15 12:34:30,261 [bot_logger] (logging_config.py).create_logger(71) Логирование для 'bot_logger' настроено успешно.
+INFO     2025-11-15 12:34:52,857 [bot_logger] (logging_config.py).create_logger(71) Логирование для 'bot_logger' настроено успешно.
+DEBUG    2025-11-15 12:34:53,476 [bot_logger] (set_menu.py).set_main_menu(22) Установил команды
+WARNING  2025-11-15 12:36:43,911 [bot_logger] (main.py).start_bot(25) Бот закрыт
+INFO     2025-11-15 12:36:46,690 [bot_logger] (logging_config.py).create_logger(71) Логирование для 'bot_logger' настроено успешно.
+DEBUG    2025-11-15 12:36:47,414 [bot_logger] (set_menu.py).set_main_menu(22) Установил команды
+WARNING  2025-11-15 12:37:36,966 [bot_logger] (main.py).start_bot(25) Бот закрыт
+INFO     2025-11-15 12:37:39,697 [bot_logger] (logging_config.py).create_logger(71) Логирование для 'bot_logger' настроено успешно.
+INFO     2025-11-15 12:38:11,286 [bot_logger] (logging_config.py).create_logger(71) Логирование для 'bot_logger' настроено успешно.
+DEBUG    2025-11-15 12:38:11,950 [bot_logger] (set_menu.py).set_main_menu(22) Установил команды
+WARNING  2025-11-15 12:40:11,442 [bot_logger] (main.py).start_bot(25) Бот закрыт
+INFO     2025-11-15 12:40:14,266 [bot_logger] (logging_config.py).create_logger(71) Логирование для 'bot_logger' настроено успешно.
+DEBUG    2025-11-15 12:40:14,827 [bot_logger] (set_menu.py).set_main_menu(22) Установил команды
+WARNING  2025-11-15 12:40:58,177 [bot_logger] (main.py).start_bot(25) Бот закрыт
+INFO     2025-11-15 12:41:00,743 [bot_logger] (logging_config.py).create_logger(71) Логирование для 'bot_logger' настроено успешно.
+DEBUG    2025-11-15 12:41:01,410 [bot_logger] (set_menu.py).set_main_menu(22) Установил команды
+WARNING  2025-11-15 12:46:13,984 [bot_logger] (main.py).start_bot(25) Бот закрыт
+WARNING  2025-11-15 12:46:14,144 [bot_logger] (main.py).<module>(46) Помощник завершены
+INFO     2025-11-15 12:46:16,600 [bot_logger] (logging_config.py).create_logger(71) Логирование для 'bot_logger' настроено успешно.
+DEBUG    2025-11-15 12:46:17,169 [bot_logger] (set_menu.py).set_main_menu(22) Установил команды
+WARNING  2025-11-15 12:49:42,999 [bot_logger] (main.py).start_bot(25) Бот закрыт
+INFO     2025-11-15 12:49:45,585 [bot_logger] (logging_config.py).create_logger(71) Логирование для 'bot_logger' настроено успешно.
+DEBUG    2025-11-15 12:49:46,140 [bot_logger] (set_menu.py).set_main_menu(22) Установил команды
+WARNING  2025-11-15 12:50:30,686 [bot_logger] (main.py).start_bot(25) Бот закрыт
+INFO     2025-11-15 12:50:33,134 [bot_logger] (logging_config.py).create_logger(71) Логирование для 'bot_logger' настроено успешно.
+DEBUG    2025-11-15 12:50:33,707 [bot_logger] (set_menu.py).set_main_menu(22) Установил команды
+WARNING  2025-11-15 12:51:22,168 [bot_logger] (main.py).start_bot(25) Бот закрыт
+INFO     2025-11-15 12:51:24,676 [bot_logger] (logging_config.py).create_logger(71) Логирование для 'bot_logger' настроено успешно.
+DEBUG    2025-11-15 12:51:25,238 [bot_logger] (set_menu.py).set_main_menu(22) Установил команды
+DEBUG    2025-11-15 12:51:28,288 [bot_logger] (help_dialog.py).go_to_answer(17) dialog_data:
+WARNING  2025-11-15 12:52:07,632 [bot_logger] (main.py).start_bot(25) Бот закрыт
+INFO     2025-11-15 12:52:10,276 [bot_logger] (logging_config.py).create_logger(71) Логирование для 'bot_logger' настроено успешно.
+DEBUG    2025-11-15 12:52:10,846 [bot_logger] (set_menu.py).set_main_menu(22) Установил команды
+DEBUG    2025-11-15 12:52:14,333 [bot_logger] (help_dialog.py).go_to_answer(17) dialog_data: {'current_answer': 'Ответ #5', 'question_text': 'Вопрос #5 ❔'}
+DEBUG    2025-11-15 12:52:14,333 [bot_logger] (help_dialog.py).go_to_answer(18) answer_text:, Ответ #5
+WARNING  2025-11-15 12:52:48,860 [bot_logger] (main.py).start_bot(25) Бот закрыт
+INFO     2025-11-15 12:52:51,423 [bot_logger] (logging_config.py).create_logger(71) Логирование для 'bot_logger' настроено успешно.
+INFO     2025-11-15 12:52:54,552 [bot_logger] (logging_config.py).create_logger(71) Логирование для 'bot_logger' настроено успешно.
+DEBUG    2025-11-15 12:52:55,120 [bot_logger] (set_menu.py).set_main_menu(22) Установил команды
+WARNING  2025-11-15 12:54:22,382 [bot_logger] (main.py).start_bot(25) Бот закрыт
